@@ -4,6 +4,7 @@
   "description": "GeekHubb FrontEnd+JS-7season",
   "main": "gulpfile.js",
   "dependencies": {
+    "font-awesome": "^4.7.0",
     "jquery": "^3.2.1"
   },
   "devDependencies": {
@@ -20,7 +21,8 @@
     "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0"
+    "gulp-uglify": "^3.0.0",
+    "tether": "^1.4.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

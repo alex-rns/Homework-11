@@ -23,6 +23,8 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'./node_modules/jquery/dist/jquery.min.js',
+        './node_modules/tether/dist/js/tether.min.js',
+		'./node_modules/bootstrap/dist/js/bootstrap.min.js',
 		'src/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -76,7 +78,6 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 
 	gulp.src(['src/fonts/**/*'])
 		.pipe(gulp.dest('dist/fonts'));
-
 });
 
 gulp.task('removedist', function() { return del.sync('dist'); });
