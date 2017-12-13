@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "jquery.mmenu": "^6.1.8"
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.6",
