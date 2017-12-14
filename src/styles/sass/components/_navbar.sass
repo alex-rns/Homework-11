@@ -1,0 +1,54 @@
+
+
+.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active
+  color: $accent-color
+
+.navbar-light .navbar-nav .nav-link
+  color: #222222
+
+
+.navbar
+  text-transform: uppercase
+  font-size: 13px
+  font-weight: 600
+
+.nav-item
+  &:before
+    font-family: FontAwesome, serif
+    position: relative
+    content: "\f107"
+    top: 45px
+    left: 10px
+  &-nodropdowns
+    &:before
+      visibility: hidden
+
+.navbar-nav
+  .active
+    &:before
+      color: $accent-color
+
+.tab-item
+  margin-top: 20px
+  display: none
+  padding: 40px
+  position: absolute
+  background: #fff
+  box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14)
+  a:link, a:visited
+    color: #727272
+    font: 300 14px/30px 'Montserrat', serif
+    text-transform: capitalize
+
+.sale
+  padding: 30px 50px
+  background: #333333
+  color: #ffffff
+  font: 700 30px/35px 'Montserrat', serif
+  text-transform: uppercase
+
+  p:last-child
+    font-weight: 400
+
+.form-control, .form-control:focus
+  border: 1px solid #e7e7e7
