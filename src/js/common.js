@@ -16,11 +16,14 @@ $(document).ready(function() {
 
 
     // Masonry
-    $('.grid').masonry({
+    var $grid = $('.grid').masonry({
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
-        percentPosition: true
-        // isFitWidth: true
+        percentPosition: true,
+        isFitWidth: true
+    });
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
     });
 
     //Gallery-item-hover
@@ -38,7 +41,12 @@ $(document).ready(function() {
     //Gallery-leave
     $('.gallery').on('mouseleave',function () {
         $('.item-info').slideUp()
-    })
+    });
+
+    //Mixitup filtering
+    var mixer = mixitup('#gallery')
+
+
 
 
 });

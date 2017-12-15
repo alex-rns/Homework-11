@@ -37,10 +37,6 @@
                                               aria-hidden="true"></i></label>
             <select id="cart" class="currency-select text-white ml-3">
               <option value="GBP" selected>empty</option>
-              <option value="USD">USD</option>
-              <option value="UAH">UAH</option>
-              <option value="EUR">EUR</option>
-              <option value="BTC">BTC</option>
             </select>
           </div>
         </div>
@@ -91,7 +87,7 @@
 
                   </div>
                 </div>
-                <div class="sale">
+                <div class="block">
                   <p>Autumn sale!</p>
                   <p>up to 50% off</p>
                 </div>
@@ -123,7 +119,7 @@
 
                   </div>
                 </div>
-                <div class="sale">
+                <div class="block">
                   <p>Autumn sale!</p>
                   <p>up to 50% off</p>
                 </div>
@@ -158,7 +154,7 @@
 
                   </div>
                 </div>
-                <div class="sale">
+                <div class="block">
                   <p>Autumn sale!</p>
                   <p>up to 50% off</p>
                 </div>
@@ -190,7 +186,7 @@
 
                   </div>
                 </div>
-                <div class="sale">
+                <div class="block">
                   <p>Autumn sale!</p>
                   <p>up to 50% off</p>
                 </div>
@@ -210,19 +206,38 @@
           </form>
         </div>
       </nav>
-
-      <h1 class="ave">a v e</h1>
+      <div class="ave">
+      <h1>a v e</h1>
+      </div>
       <a class="button-main button-welcome button-hover" href="#">shop men’s collection</a>
     </div>
 
 
   </section>
 
+
+  <section class="filter-section">
+    <ul>
+      <li>
+        <button class="filter" data-filter=".cat-1">1</button>
+      </li>
+      <li>
+        <button class="filter" data-filter=".cat-2">2</button>
+      </li>
+      <li>
+        <button class="filter" data-filter=".cat-3">3</button>
+      </li>
+
+    </ul>
+
+
+  </section>
+
   <section class="gallery container-fluid my-5">
-    <div class="grid">
+    <div class="grid" id="gallery">
       <div class="grid-sizer"></div>
 
-      <div class="grid-item">
+      <div class="mix cat-1 grid-item">
         <img class="img-fluid" src="images/item-1.png" alt="item-1">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -253,7 +268,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="grid-item">
+      <div class="mix cat-2 grid-item">
         <img class="img-fluid" src="images/item-2.png" alt="item-2">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -284,7 +299,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="grid-item grid-item--width2">
+      <div class="mix cat-1 grid-item grid-item--width2">
         <img class="img-fluid" src="images/item-3.png" alt="item-3">
         <p class="item-price p-2"><span><sup>£</sup>107 </span><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -315,7 +330,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="grid-item grid-item--width2">
+      <div class="mix cat-2 grid-item grid-item--width2">
         <img class="img-fluid" src="images/item-4.png" alt="item-4">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -346,7 +361,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="grid-item">
+      <div class="mix cat-1 grid-item">
         <img class="img-fluid" src="images/item-5.png" alt="item-5">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -376,7 +391,8 @@
         </div>
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
-      <div class="grid-item">
+
+      <div class="mix cat-3 grid-item">
         <img class="img-fluid" src="images/item-6.png" alt="item-6">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -412,19 +428,20 @@
 
   <section class="lookbook-section mb-5">
     <div class="container-fluid">
-      <ul class="row justify-content-between m-0">
+      <ul class="row justify-content-between m-0 flex-wrap">
         <li class="card-item col-lg-4 row flex-nowrap justify-content-around">
-          <img src="images/card-img-1.png" alt="card-img-1">
+          <img class="img-fluid" src="images/card-img-1.png" alt="card-img-1">
           <div class="card-description">
             <h2>men’s</h2>
             <span>lookbook</span>
-            <p>Lorem ipsum dolor sit amet eras facilisisconsectetur adipiscing elit lor, integer lorem consecteur dignissim laciniqui.Elementum metus facilisis ut phasellu.
+            <p>Lorem ipsum dolor sit amet eras facilisisconsectetur adipiscing elit lor, integer lorem consecteur
+              dignissim laciniqui.Elementum metus facilisis ut phasellu.
             </p>
             <a class="button-main button-card button-hover mt-3 d-inline-block" href="#">view now</a>
           </div>
         </li>
         <li class="card-item col-lg-4 row flex-nowrap justify-content-around">
-          <img src="images/card-img-2.png" alt="card-img-2">
+          <img class="img-fluid" src="images/card-img-2.png" alt="card-img-2">
           <div class="card-description">
             <h2>women’s</h2>
             <span>lookbook</span>
@@ -435,11 +452,12 @@
           </div>
         </li>
         <li class="card-item col-lg-4 row flex-nowrap justify-content-around">
-          <img src="images/card-img-3.png" alt="card-img-2">
+          <img class="img-fluid" src="images/card-img-3.png" alt="card-img-2">
           <div class="card-description">
             <h2>your</h2>
             <span>lookbook</span>
-            <p>See an item you like and click the  button to add it to your lookbook where you can create your own perfect look.It’s like your own boutique!
+            <p>See an item you like and click the  button to add it to your lookbook where you can create your own
+              perfect look.It’s like your own boutique!
             </p>
             <a class="button-main button-card button-hover mt-3 d-inline-block" href="#">view now</a>
           </div>
@@ -449,56 +467,56 @@
   </section>
 
 
-<section class="links-section">
-  <div class="container">
-    <ul class="row justify-content-between links-list">
-      <li>
-        <h3>Information</h3>
-        <ul>
-          <li><a href="#">The brand</a></li>
-          <li><a href="#">Local stores</a></li>
-          <li><a href="#">Customer service</a></li>
-          <li><a href="#">Privacy & cookies</a></li>
-          <li><a href="#">Site map</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Why buy from us</h3>
-        <ul>
-          <li><a href="#">Shipping & returns</a></li>
-          <li><a href="#">Secure shopping</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Award winning</a></li>
-          <li><a href="#">Ethical trading</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Your account</h3>
-        <ul>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">Register</a></li>
-          <li><a href="#">View cart</a></li>
-          <li><a href="#">View your lookbook</a></li>
-          <li><a href="#">Track an order</a></li>
-          <li><a href="#">Update information</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Lookbook</h3>
-        <ul>
-          <li><a href="#">Latest posts</a></li>
-          <li><a href="#">Men’s lookbook</a></li>
-          <li><a href="#">Women’s lookbook</a></li>
-          <li><a href="#">Lookbooks RSS feed</a></li>
-          <li><a href="#">View your lookbook</a></li>
-          <li><a href="#">Delete your lookbook</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3 class="contacts">contact details</h3>
+  <section class="links-section py-5">
+    <div class="container">
+      <ul class="row justify-content-between links-list mb-4">
+        <li>
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">The brand</a></li>
+            <li><a href="#">Local stores</a></li>
+            <li><a href="#">Customer service</a></li>
+            <li><a href="#">Privacy & cookies</a></li>
+            <li><a href="#">Site map</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>Why buy from us</h3>
+          <ul>
+            <li><a href="#">Shipping & returns</a></li>
+            <li><a href="#">Secure shopping</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Award winning</a></li>
+            <li><a href="#">Ethical trading</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>Your account</h3>
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">View cart</a></li>
+            <li><a href="#">View your lookbook</a></li>
+            <li><a href="#">Track an order</a></li>
+            <li><a href="#">Update information</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3>Lookbook</h3>
+          <ul>
+            <li><a href="#">Latest posts</a></li>
+            <li><a href="#">Men’s lookbook</a></li>
+            <li><a href="#">Women’s lookbook</a></li>
+            <li><a href="#">Lookbooks RSS feed</a></li>
+            <li><a href="#">View your lookbook</a></li>
+            <li><a href="#">Delete your lookbook</a></li>
+          </ul>
+        </li>
+        <li>
+          <h3 class="contacts">contact details</h3>
 
           <p>Head Office: Avenue Fashion,
-           180-182 Regent Street, London.</p>
+            180-182 Regent Street, London.</p>
           <p>
             <a href="#">Telephone: 0123-456-789 </a>
           </p>
@@ -507,22 +525,52 @@
           </p>
 
 
-      </li>
-    </ul>
-  </div>
+        </li>
+      </ul>
+      <div class="blocks row justify-content-around">
+        <div class="block block-bottom col-lg-5 row">
+          <p>award winner</p>
+          <p>fashion awards 2016</p>
+        </div>
+        <div class="block block-bottom block-accent col-lg-5 row ">
+          <ul class="row social-list m-0">
 
-</section>
+            <li>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
 </div>
 
 <!----------------------------------FOOTER--------------------------------------->
 
-<footer class="main-footer">
-  <div>© 2016 Avenue Fashion™</div>
-  <div>
-    <a href="">Design by RobbyDesigns.com</a>
-    <a href="">Dev by Loremipsum.com</a>
+<footer class="main-footer py-2">
+  <div class="container">
+    <div class="row justify-content-between align-content-center-center">
+
+      <p>&copy; 2016 Avenue Fashion&#8482;</p>
+
+      <div class="developers row">
+        <p>Design by <a href="">RobbyDesigns.com</a></p>
+        <p class="ml-4">Dev by <a href="">Loremipsum.com</a></p>
+      </div>
+    </div>
   </div>
 </footer>
 
