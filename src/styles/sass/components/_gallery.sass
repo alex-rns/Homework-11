@@ -5,9 +5,15 @@
   width: 23%
   background: $bg-color
   margin: 15px
+  button
+    display: none
+
   &:hover
     box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14)
-
+    .item-thumb
+      display: flex
+    button
+      display: block
 
 .grid-item--width2
   width: 47.5%
@@ -34,6 +40,8 @@
     font-size: 15px
     box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14)
 
+
+
   &-buttons
     margin: auto
     li
@@ -47,6 +55,8 @@
         background: $accent-color
 
   &-thumb
+    transition: $transition
+    display: none
     width: 80px
     height: 100px
     position: absolute
