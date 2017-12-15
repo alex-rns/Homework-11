@@ -25,6 +25,7 @@ gulp.task('js', ['common-js'], function() {
 		'./node_modules/jquery/dist/jquery.min.js',
         './node_modules/tether/dist/js/tether.min.js',
 		'./node_modules/bootstrap/dist/js/bootstrap.min.js',
+		'./node_modules/masonry-layout/dist/masonry.pkgd.min.js',
 		'src/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

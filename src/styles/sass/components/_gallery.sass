@@ -1,0 +1,61 @@
+
+.grid-sizer,
+.grid-item
+  text-align: center
+  width: 23%
+  background: $bg-color
+  margin: 15px
+  &:hover
+    box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14)
+
+
+.grid-item--width2
+  width: 47.5%
+  margin: 15px
+
+.item
+  &-price
+    position: absolute
+    color: #9a9a9a
+    top: 0
+    span
+      text-decoration: line-through
+      margin-right: 8px
+
+.item
+  &-info
+    width: 100%
+    display: none
+    padding: 20px 0
+    position: absolute
+    z-index: 10
+    background: #fff
+    color: #8e8c8c
+    font-size: 15px
+    box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14)
+
+  &-buttons
+    margin: auto
+    li
+      padding: 0 5px
+      display: inline-block
+    a
+      background-color: #727272
+      border-radius: 50%
+      padding: 5px 8px
+      &:hover
+        background: $accent-color
+
+  &-thumb
+    width: 80px
+    height: 100px
+    position: absolute
+    top: 0
+    right: 10px
+    margin: 20px
+    a
+      background: #fff
+      margin-bottom: 10px
+      border: 1px solid #ffffff
+      &:hover
+        box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14)
