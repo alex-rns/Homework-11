@@ -15,16 +15,32 @@ $(document).ready(function() {
     });
 
 
+
+    //Mixitup filtering
+    var mixer = mixitup('.grid');
+
+
     // Masonry
     var $grid = $('.grid').masonry({
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         percentPosition: true,
-        isFitWidth: true
+        gutter: '.gutter-sizer'
+        // isFitWidth: true
     });
-    $grid.imagesLoaded().progress( function() {
-        $grid.masonry('layout');
+
+
+
+
+    $('.filter').on( 'click',  function() {
+
+        setTimeout(function () {
+            $grid.delay( 5000 ).masonry('layout');
+        }, 1000);
+
+
     });
+
 
     //Gallery-item-hover
     var flag = true;
@@ -43,8 +59,10 @@ $(document).ready(function() {
         $('.item-info').slideUp()
     });
 
-    //Mixitup filtering
-    var mixer = mixitup('#gallery')
+
+
+
+
 
 
 

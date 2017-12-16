@@ -4,52 +4,173 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+  .welcome-section
+    min-height: 700px
+  .card-item
+    padding-left: 0
+    max-height: 430px
+    > div
+      padding-left: 0
 
+    img
+      padding-top: 25px
+  .card-description
+    z-index: 11
+    text-align: right
+    padding: 40px 0
+    p
+      font-size: 12px
 
+    span
+      font-size: 24px
+      font-weight: 300
+      margin-bottom: 15px
+      display: block
+
+  .button-card
+    padding: 10px 15px
+
+  .button-main
+    font-size: 14px
+    letter-spacing: 2.2px
+  .navbar
+    font-size: 12px
+  .form-search
+    width: 20%
+  .ave
+    height: 60vh
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+
+  .filter-section, .gallery
+    padding: 0 50px
+
+  .grid-item:hover .item-thumb
+    display: none
+
+  .welcome-section
+    min-height: 600px
+
+  .block-bottom
+    margin-bottom: 25px
+    &:last-of-type
+      margin-bottom: 0
+
+  .input-group
+    padding-top: 20px
+
+  .nav-item
+    &:last-of-type
+      .tab-item
+        left: 40%
+  .block
+    padding: 10px 20px
+
+  .button-main
+    font-size: 12px
+    padding: 10px 15px
+
+  .links-list
+    li
+      min-width: 150px
+    h3
+      margin-top: 15px
+
+  .block-bottom
+    p
+      margin: auto
+
+  .navbar-nav
+    flex-direction: row
+
+  .button-welcome
+    left: 60%
+    top: 80%
+
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .filter-section
+    button
+      font-size: 11px
+    li
+      padding: 0 12px
+  .button-info
+    font-size: 15px
+  .item-info
+    left: 50%
+    transform: translate(-50%)
+    width: 150%
 
-
+  .welcome-section
+    min-height: 500px
+  body
+    font-size: 12px
+  .tab-item
+    padding: 20px
+    margin-top: 15px
+  .main-header
+    font-size: 11px
+  .button-main
+    font-size: 10px
+  h2
+    font-size: 25px
+  .block
+    font-size: 25px
+  .developers
+    flex-direction: column
+  .links-section
+    li
+      padding: 0 15px
+  .links-list
+    li
+      min-width: 250px
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
+@media only screen and (max-width : 576px)
+  .filter-section
+    button
+      font-size: 10px
+    li
+      padding: 0 15px
+  .filter-section, .gallery
+    padding: 0 10px
+  .ave
+    h1
+      font-size: 15vmax
+  .links-list
+    >li
+      margin: 0 auto
+      text-align: center
+      min-width: 300px
+      h3
+        text-align: center
+  .card-item
+    img
+      display: none
+  .cart
+    margin-left: 2px
+  .button-welcome
+    left: 40%
+  .user-menu
+    margin: 0 auto
 
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+@media only screen and (max-width : 430px)
+  .filter-section
+    button
+      font-size: 8px
+    li
+      padding: 0 8px
+  .ave
+    h1
+      font-size: 10vmax
+  body
+    font-size: 10px
+  .main-footer, .main-header
+    font-size: 9px
+  .navbar-brand
+    width: 60%
+  .button-main
+    font-size: 9px
+    padding: 5px 8px

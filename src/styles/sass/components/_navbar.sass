@@ -23,6 +23,9 @@
   &-nodropdowns
     &:before
       visibility: hidden
+  &:last-of-type
+    .tab-item
+      left: 65%
 
 .navbar-nav
   .active
@@ -30,6 +33,7 @@
       color: $accent-color
 
 .tab-item
+  z-index: 10
   margin-top: 8px
   display: none
   padding: 40px
@@ -40,6 +44,7 @@
     color: #727272
     font: 300 14px/30px 'Montserrat', serif
     text-transform: capitalize
+
 
 
 

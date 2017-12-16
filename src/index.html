@@ -32,7 +32,7 @@
         <div class="user-menu row">
           <button class="button button-user-menu mx-3">Register</button>
           <button class="button button-user-menu mx-3">Sign In</button>
-          <div class="cart ml-5 px-4 accent-bg row align-items-center">
+          <div class="cart ml-sm-5 px-4 accent-bg row align-items-center">
             <label class="mb-0" for="cart"><i class="fa text-white fa-2x fa-shopping-cart"
                                               aria-hidden="true"></i></label>
             <select id="cart" class="currency-select text-white ml-3">
@@ -55,7 +55,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <img src="images/logo.png" alt="logo">
+          <img class="img-fluid" src="images/logo.png" alt="logo">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -93,7 +93,7 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item ml-5">
+            <li class="nav-item ml-xl-4 ml-lg-2 ml-sm-4">
               <a class="nav-link" href="#">Woman</a>
               <div class="tab-item">
                 <div class="row mb-4 pl-3">
@@ -125,10 +125,10 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item nav-item-nodropdowns ml-5">
+            <li class="nav-item nav-item-nodropdowns ml-xl-4 ml-lg-2 ml-sm-4">
               <a class="nav-link" href="#">The brand</a>
             </li>
-            <li class="nav-item ml-5">
+            <li class="nav-item ml-xl-4 ml-lg-2 ml-sm-4">
               <a class="nav-link" href="#">Local stores</a>
               <div class="tab-item">
                 <div class="row mb-4 pl-3">
@@ -160,7 +160,7 @@
                 </div>
               </div>
             </li>
-            <li class="nav-item ml-5">
+            <li class="nav-item ml-xl-4 ml-lg-2 ml-sm-4">
               <a class="nav-link" href="#">Look book</a>
               <div class="tab-item">
                 <div class="row mb-4 pl-3">
@@ -194,7 +194,7 @@
             </li>
           </ul>
 
-          <form class="form-inline my-2 my-lg-0 ml-5">
+          <form class="form-search my-2 ml-xl-4 ml-lg-2 m-sm-0">
             <div class="input-group">
               <input type="text" class="form-control border-right-0" placeholder="Search">
               <span class="input-group-btn">
@@ -207,7 +207,7 @@
         </div>
       </nav>
       <div class="ave">
-      <h1>a v e</h1>
+        <h1>a v e</h1>
       </div>
       <a class="button-main button-welcome button-hover" href="#">shop men’s collection</a>
     </div>
@@ -216,16 +216,22 @@
   </section>
 
 
-  <section class="filter-section">
-    <ul>
+  <section class="filter-section container-fluid py-5">
+    <ul class="row">
       <li>
-        <button class="filter" data-filter=".cat-1">1</button>
+        <button class="filter button button-filter" data-filter="all">popular</button>
       </li>
       <li>
-        <button class="filter" data-filter=".cat-2">2</button>
+        <button class="filter button button-filter" data-filter=".new-arrivals">new arrivals</button>
       </li>
       <li>
-        <button class="filter" data-filter=".cat-3">3</button>
+        <button class="filter button button-filter" data-filter=".best-sellers">best sellers</button>
+      </li>
+      <li>
+        <button class="filter button button-filter" data-filter=".special-offers">special offers</button>
+      </li>
+      <li>
+        <button class="filter button button-filter" data-filter=".coming-soon">coming soon</button>
       </li>
 
     </ul>
@@ -233,11 +239,12 @@
 
   </section>
 
-  <section class="gallery container-fluid my-5">
-    <div class="grid" id="gallery">
+  <section class="gallery container-fluid mb-3">
+    <div class="grid">
       <div class="grid-sizer"></div>
+      <div class="gutter-sizer"></div>
 
-      <div class="mix cat-1 grid-item">
+      <div class="mix new-arrivals grid-item">
         <img class="img-fluid" src="images/item-1.png" alt="item-1">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -268,7 +275,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="mix cat-2 grid-item">
+      <div class="mix new-arrivals grid-item">
         <img class="img-fluid" src="images/item-2.png" alt="item-2">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -299,7 +306,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="mix cat-1 grid-item grid-item--width2">
+      <div class="mix cat-1 special-offers best-sellers grid-item grid-item--width2 grid-item--height2">
         <img class="img-fluid" src="images/item-3.png" alt="item-3">
         <p class="item-price p-2"><span><sup>£</sup>107 </span><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -330,7 +337,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="mix cat-2 grid-item grid-item--width2">
+      <div class="mix cat-2 special-offers grid-item grid-item--width2 grid-item--height2">
         <img class="img-fluid" src="images/item-4.png" alt="item-4">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -361,7 +368,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="mix cat-1 grid-item">
+      <div class="mix new-arrivals best-sellers grid-item">
         <img class="img-fluid" src="images/item-5.png" alt="item-5">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -392,7 +399,7 @@
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
 
-      <div class="mix cat-3 grid-item">
+      <div class="mix coming-soon grid-item">
         <img class="img-fluid" src="images/item-6.png" alt="item-6">
         <p class="item-price p-2"><sup>£</sup>89.99</p>
         <div class="item-info">
@@ -422,16 +429,20 @@
         </div>
         <button class="button button-info"><i class="fa fa-info-circle" aria-hidden="true"></i></button>
       </div>
-    </div>
 
+    </div>
   </section>
 
-  <section class="lookbook-section mb-5">
+
+  <section class="lookbook-section mb-xl-5 mb-sm-1">
     <div class="container-fluid">
-      <ul class="row justify-content-between m-0 flex-wrap">
-        <li class="card-item col-lg-4 row flex-nowrap justify-content-around">
-          <img class="img-fluid" src="images/card-img-1.png" alt="card-img-1">
-          <div class="card-description">
+      <ul class="justify-content-center row">
+        <li class="card-item col-lg-4 col-sm-12 row flex-sm-row">
+
+          <div class="col-lg-5 col-sm-6 text-center">
+            <img class="img-fluid" src="images/card-img-1.png" alt="image"/>
+          </div>
+          <div class="card-description col-lg-7 col-sm-6">
             <h2>men’s</h2>
             <span>lookbook</span>
             <p>Lorem ipsum dolor sit amet eras facilisisconsectetur adipiscing elit lor, integer lorem consecteur
@@ -440,34 +451,41 @@
             <a class="button-main button-card button-hover mt-3 d-inline-block" href="#">view now</a>
           </div>
         </li>
-        <li class="card-item col-lg-4 row flex-nowrap justify-content-around">
-          <img class="img-fluid" src="images/card-img-2.png" alt="card-img-2">
-          <div class="card-description">
-            <h2>women’s</h2>
+        <li class="card-item col-lg-4 col-sm-12 row flex-sm-row">
+
+          <div class="col-lg-5 col-sm-6 text-center">
+            <img class="img-fluid" src="images/card-img-1.png" alt="image"/>
+          </div>
+          <div class="card-description col-lg-7 col-sm-6">
+            <h2>men’s</h2>
             <span>lookbook</span>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames .
-              Pellentesque laoreet quis enim et mattis. Quisque interdum felis tellus.
+            <p>Lorem ipsum dolor sit amet eras facilisisconsectetur adipiscing elit lor, integer lorem consecteur
+              dignissim laciniqui.Elementum metus facilisis ut phasellu.
             </p>
             <a class="button-main button-card button-hover mt-3 d-inline-block" href="#">view now</a>
           </div>
         </li>
-        <li class="card-item col-lg-4 row flex-nowrap justify-content-around">
-          <img class="img-fluid" src="images/card-img-3.png" alt="card-img-2">
-          <div class="card-description">
-            <h2>your</h2>
+        <li class="card-item col-lg-4 col-sm-12 row flex-sm-row">
+
+          <div class="col-lg-5 col-sm-6 text-center">
+            <img class="img-fluid" src="images/card-img-1.png" alt="image"/>
+          </div>
+          <div class="card-description col-lg-7 col-sm-6">
+            <h2>men’s</h2>
             <span>lookbook</span>
-            <p>See an item you like and click the  button to add it to your lookbook where you can create your own
-              perfect look.It’s like your own boutique!
+            <p>Lorem ipsum dolor sit amet eras facilisisconsectetur adipiscing elit lor, integer lorem consecteur
+              dignissim laciniqui.Elementum metus facilisis ut phasellu.
             </p>
             <a class="button-main button-card button-hover mt-3 d-inline-block" href="#">view now</a>
           </div>
         </li>
       </ul>
     </div>
+
+
   </section>
 
-
-  <section class="links-section py-5">
+  <section class="links-section mb-5">
     <div class="container">
       <ul class="row justify-content-between links-list mb-4">
         <li>
@@ -562,9 +580,9 @@
 
 <footer class="main-footer py-2">
   <div class="container">
-    <div class="row justify-content-between align-content-center-center">
+    <div class="row justify-content-xl-between align-content-center justify-content-around">
 
-      <p>&copy; 2016 Avenue Fashion&#8482;</p>
+      <p class="my-auto">&copy; 2016 Avenue Fashion&#8482;</p>
 
       <div class="developers row">
         <p>Design by <a href="">RobbyDesigns.com</a></p>
