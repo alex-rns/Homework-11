@@ -47,4 +47,11 @@ $(document).ready(function() {
         $('.item-info').slideUp()
     });
 
+
+    //Toggle currency
+    $('#inputCurrency').on('change', function () {
+        var qwe = $(this).val();
+        $('body').find('.out-currency').text(qwe)
+    })
+//
 });
