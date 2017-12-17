@@ -9748,10 +9748,6 @@ body {
 .upper-text {
   text-transform: uppercase; }
 
-.over-text-indent {
-  font-size: 1px;
-  text-indent: -9999px; }
-
 .full-opacity {
   opacity: 1; }
 
@@ -9920,10 +9916,6 @@ button:focus {
 .gallery {
   padding: 0 150px; }
 
-.grid {
-  margin: 0 auto;
-  height: 1000px; }
-
 .grid-sizer,
 .grid-item {
   width: 22%; }
@@ -9931,26 +9923,28 @@ button:focus {
 .gutter-sizer {
   width: 4%; }
 
-.grid-item {
-  text-align: center;
-  float: left;
-  background: #f8f8f8;
-  margin-bottom: 30px; }
-  .grid-item button {
-    display: none; }
-  .grid-item:hover {
-    -webkit-box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14);
-            box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14); }
-    .grid-item:hover .item-thumb {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
-    .grid-item:hover button {
-      display: block; }
-
-.grid-item--width2 {
-  width: 44%; }
+.grid {
+  margin: 0 auto;
+  height: 1000px; }
+  .grid-item {
+    text-align: center;
+    float: left;
+    background: #f8f8f8;
+    margin-bottom: 30px; }
+    .grid-item button {
+      display: none; }
+    .grid-item:hover {
+      -webkit-box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14);
+              box-shadow: 0 17px 24px rgba(0, 0, 0, 0.14); }
+      .grid-item:hover .item-thumb {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+      .grid-item:hover button {
+        display: block; }
+    .grid-item--width2 {
+      width: 48%; }
 
 .item-price {
   position: absolute;
@@ -9965,7 +9959,7 @@ button:focus {
   display: none;
   padding: 20px 0;
   position: absolute;
-  z-index: 10;
+  z-index: 20;
   background: #fff;
   color: #8e8c8c;
   font-size: 15px;
@@ -10087,6 +10081,10 @@ button:focus {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .grid-item:hover .item-thumb {
+    width: 20%; }
+  .button-info {
+    font-size: 22px; }
   .welcome-section {
     min-height: 700px; }
   .card-item {
@@ -10121,6 +10119,8 @@ button:focus {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  .card-description {
+    padding: 30px 0; }
   .filter-section, .gallery {
     padding: 0 50px; }
   .grid-item:hover .item-thumb {
@@ -10158,6 +10158,16 @@ button:focus {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  option {
+    font-size: 11px; }
+  .form-search {
+    width: 30%; }
+  .item-info {
+    font-size: 12px; }
+    .item-info h3 {
+      font-size: 11px; }
+  .item-price {
+    font-size: 10px; }
   .filter-section button {
     font-size: 11px; }
   .filter-section li {
@@ -10198,6 +10208,10 @@ button:focus {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
+  .form-search {
+    width: 50%; }
+  .card-description {
+    padding: 20px 0; }
   .filter-section button {
     font-size: 10px; }
   .filter-section li {

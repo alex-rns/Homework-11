@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-
     // Navbar
-
     $('.nav-item').on('mouseover', function () {
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
@@ -14,11 +12,8 @@ $(document).ready(function() {
         });
     });
 
-
-
     //Mixitup filtering
     var mixer = mixitup('.grid');
-
 
     // Masonry
     var $grid = $('.grid').masonry({
@@ -26,21 +21,14 @@ $(document).ready(function() {
         columnWidth: '.grid-sizer',
         percentPosition: true,
         gutter: '.gutter-sizer'
-        // isFitWidth: true
     });
 
-
-
-
+    //Masonry rebuild after Mixitup filtering
     $('.filter').on( 'click',  function() {
-
         setTimeout(function () {
             $grid.delay( 5000 ).masonry('layout');
         }, 1000);
-
-
     });
-
 
     //Gallery-item-hover
     var flag = true;
@@ -54,17 +42,9 @@ $(document).ready(function() {
         }
     });
 
-    //Gallery-leave
+    //Gallery-mouse-leave
     $('.gallery').on('mouseleave',function () {
         $('.item-info').slideUp()
     });
-
-
-
-
-
-
-
-
 
 });
