@@ -9825,7 +9825,7 @@ button:focus {
     font-size: 48px;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%; }
     .button-info:hover {
       color: #3ec8c9; }
@@ -9891,7 +9891,7 @@ button:focus {
   .nav-item-nodropdowns:before {
     visibility: hidden; }
   .nav-item:last-of-type .tab-item {
-    left: 65%; }
+    left: 60%; }
 
 .navbar-nav .active:before {
   color: #3ec8c9; }
@@ -9984,7 +9984,7 @@ button:focus {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: none;
-  width: 80px;
+  width: 60px;
   height: 100px;
   position: absolute;
   top: 0;
@@ -10160,6 +10160,21 @@ button:focus {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .tab-item {
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .tab-item .block {
+      display: none; }
+  .nav-item:last-of-type .tab-item {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%); }
+  .form-search {
+    display: none; }
   option {
     font-size: 11px; }
   .form-search {
@@ -10210,16 +10225,25 @@ button:focus {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
+  .links-list:last-of-type li {
+    margin-bottom: 5px; }
+  .nav-item {
+    margin-left: 4px; }
   .form-search {
     width: 50%; }
   .card-description {
     padding: 20px 0; }
+  .filter-section .row {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .filter-section button {
     font-size: 10px; }
   .filter-section li {
     padding: 0 15px; }
   .filter-section, .gallery {
-    padding: 0 10px; }
+    padding: 0 15px; }
   .ave h1 {
     font-size: 15vmax; }
   .links-list > li {
@@ -10238,6 +10262,17 @@ button:focus {
     margin: 0 auto; } }
 
 @media only screen and (max-width: 430px) {
+  .nav-item {
+    font-size: 8px; }
+    .nav-item .row {
+      margin: 0; }
+  .tab-item {
+    padding: 5px; }
+    .tab-item h3 {
+      font-size: 8px; }
+    .tab-item a:link {
+      line-height: 20px;
+      font-size: 10px; }
   .filter-section button {
     font-size: 8px; }
   .filter-section li {

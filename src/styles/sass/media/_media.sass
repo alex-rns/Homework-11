@@ -106,6 +106,22 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 
+  .tab-item
+    width: 100%
+    left: 50%
+    transform: translateX(-50%)
+    .block
+      display: none
+
+  .nav-item
+    &:last-of-type
+      .tab-item
+        left: 50%
+        transform: translate(-50%)
+
+  .form-search
+    display: none
+
   option
     font-size: 11px
 
@@ -170,6 +186,12 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
 
+  .links-list:last-of-type li
+    margin-bottom: 5px
+
+  .nav-item
+    margin-left: 4px
+
   .form-search
     width: 50%
 
@@ -177,13 +199,15 @@
     padding: 20px 0
 
   .filter-section
+    .row
+      justify-content: center
     button
       font-size: 10px
     li
       padding: 0 15px
 
   .filter-section, .gallery
-    padding: 0 10px
+    padding: 0 15px
 
   .ave
     h1
@@ -211,6 +235,20 @@
     margin: 0 auto
 
 @media only screen and (max-width : 430px)
+
+
+  .nav-item
+    font-size: 8px
+    .row
+      margin: 0
+
+  .tab-item
+    padding: 5px
+    h3
+      font-size: 8px
+    a:link
+      line-height: 20px
+      font-size: 10px
 
   .filter-section
     button
